@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="icon" href="imagene/logocss.ico">
+</head>
+
+<body>
+    <h1> Primer Formulario</h1>
+    <fieldset>
+        <legend>Datos Personales</legend>
+
+        <form action=""></form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="Nombre" placeholder="escriba su nombre">
+
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" required size="10" maxlength="5">
+
+        <br>
+        <label for="DNI">dni</label>
+        <input type="number">
+
+        <br>
+        <label for="nro_tramite">numero de tramite</label>
+        <input type="password">
+
+        <br>
+        <br>
+        <label for="hijos">Numero de hijos(0 a 10)</label>
+        <input type="number" min="0" max="10">
+        <br>
+        <label for="fechanac">fecha de nacimiento</label>
+        <input type="date" min="2018" max="2022">
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>Datos para inscripcion</legend>
+        <label for="turno">seleccione su turno</label>
+        <select>
+            <option value="1">Mañana</option>
+            <option value="2">tarde</option>
+            <option value="3" selected>vespertino</option>
+            <option value="4">Noche</option>
+
+        </select>
+        <br>
+        <label for="conocimientos">conocimientos previos</label>
+        <input type="checkbox" name="op" value="1"> html
+        <input type="checkbox" name="op" value="2"> css
+        <input type="checkbox" name="op" value="3"> js
+        <br>
+        <label for="rb"> tengo interes en...</label>
+        <input type="radio" name="rb" value="1"> full stack
+        <input type="radio" name="rb" value="2"> stack
+        <input type="radio" name="rb" value="3"> java
+        <input type="radio" name="rb" value="4"> php
+
+
+    </fieldset>
+    <br>
+    <label for="comentarios">deje su comentario</label>
+    <textarea name="comentario" cols="20" rows="2">escribe tu consulta</textarea>
+    <br><br>
+
+    <input type="submit" value="enviar">
+    <input type="reset" value="borrar">
+    <br><br>
+    <img src="imagene/bandera_argentina.jpg" alt="imagen bandera" width="200">
+    <br><br><br>
+
+
+    <audio controls>
+
+        <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <br><br>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+    </video>
+    <h2>inframe</h2>
+    <br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.629099000238!2d-64.28496518521966!3d-33.09254118087794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdfe51e6af9b07%3A0xc038905b7662e9cf!2sBv.%20Independencia%2C%20R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1661638444186!5m2!1ses-419!2sar"
+        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br><br>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/XqFR2lqBYPs"
+        title="Aprende HTML y CSS - Curso Desde Cero" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <br><br>
+        <h2>tablas</h2>
+        <br>
+        <table border="1">
+           <tr>
+               <th>Dia</th>
+               <th>mes</th>
+           </tr>
+           <tr>
+               <td>10</td>
+               <td>Agosto</td>
+           </tr>
+           <tr>
+               <td>14</td>
+               <td>septiembre</td>
+           </tr>
+            
+        </table>
+        <br><br>
+        <table border="1">
+            <tr>
+                <td rowspan="3">Zona Sur</td>
+                <td>Avellaneda</td>
+                <td>Lanus</td>
+            </tr>
+            <tr>
+                <td colspan="2">Banfield</td>
+            </tr>
+            <tr>
+                <td>Quilmes</td>
+                <td>Berazategui</td>
+        </tr>
+            <tr>
+                <td rowspan="2">Zona oeste</td>
+                <td>moron</td>
+                <td>Merlo</td>
+            </tr>
+            
+        </table>
+</body>
+
+</html>
